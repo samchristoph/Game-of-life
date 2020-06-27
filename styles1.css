@@ -1,0 +1,17 @@
+#todoInput {
+    width : 200px;
+    height : 160px;
+}
+
+.stickyNote {
+    overflow-y: auto;
+    width: 600px;
+    height: 160px;
+    border-top: 40px solid #ffffda;
+    background-color: rgba(255, 149, 149, 0.705);
+    display: inline-block;
+    padding: 10px;
+    margin: 20px 20px 0px 0px;
+
+
+

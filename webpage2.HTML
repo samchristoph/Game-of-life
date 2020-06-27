@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles1.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="main1.js"></script>
+        <style>
+            .content {
+                padding: 10px;
+            }
+            .row {
+                padding: 10px;
+            }
+            .card {
+                margin-bottom: 10px;
+            }
+            h1 {
+                color: lightblue;
+            }
+            #page1 {
+                color: orange;
+            }
+        </style>
+        <script>
+            var clicks = 0
+            function post1Clicked() {
+                clicks += 1
+                $("#numClicks").text(clicks)
+            }
+        </script>
+        <title>Sam's Notes</title>
+    </head>
+        <p>Hello. Do you want to view <a href="webpage1.html">page 1</a> ?</p>
+            <div class="card" style="background-color:rgba(158, 244, 255, 0.705);">
+                <div class="card-body">
+                    <h5>Compliment Button</h5>
+                    <p>
+                        Everybody needs a compliment!
+                    </p>
+                </div>
+            <button ondblclick="compliment()" style="background-color:rgba(113, 195, 228, 0.705);" > 
+                Double Click!
+            </button> 
+            <script> 
+                function compliment() { 
+                    alert("You are looking quite stunning today! Wow!"); 
+            } 
+            </script> 
+            </div>
+        </div>
+        <hr>
+    <body style="background-color:rgba(0, 114, 129, 0.705);">
+        <div class="row">
+            <div class="col text-center">
+                <div class="page-header">
+                    <h1>Reminders</h1>
+                    <p>General Notes</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-9" id="stickyNotes"></div>
+            <div class="col-3">
+                <textarea type="text" id="todoInput" style="background-color:rgba(107, 255, 255, 0.561);" class="form-control"></textarea>
+                <br>
+                <button onClick="addSticky()" style="background-color:rgba(51, 90, 105, 0.705);" class = "btn btn-success">Add Note</button>
+            </div>
+        </div>
+    </body>
+</html>
